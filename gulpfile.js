@@ -11,7 +11,7 @@ var webserver = require('gulp-webserver'); // server
 var paths = {
   scripts: ['dev/assets/js/**/*.js'],
   images: ['dev/assets/images/**/*'],
-  css: ['dev/assets/css/**/*'],
+  css: ['dev/assets/css/**/*.css'],
   html: ['dev/*.html']
 };
 

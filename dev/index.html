@@ -5,47 +5,68 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 		<link rel="shortcut icon" href="http://images.elo7.com.br/assets/new/favicon-16.png">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="assets/css/elo7.css" media="all" />
+        
 	</head>
     
 	<body>
         
         <!-- all site -->    
-        <section> 
+        <section class="all-site"> 
 
             <!-- header -->
-            <header>
-                <h1>Trabalhe no  Elo7</h1>
+            <header class="box-full header-elo7">
                 <figure>
                     <img src="assets/images/foto-header.png" alt="Trabalhe no Elo7" title="Trabalhe no Elo7">
                 </figure>
+                <h1>Trabalhe no  Elo7</h1>    
                 <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido.</p>
-                <a href="#">Vagas em aberto &raquo;</a>
+                <a href="#" class="link-section">Vagas em aberto </a>
+                
             </header>
             <!-- header -->
 
             <!-- Elo7 team -->
-            <section class="elo7-team">            
-                <video></video>
-                <article class="citation"></article>            
+            <section class="box-full elo7-team">
+                
+                <div class="box-full">
+                
+                    <div class="col-desk-6 col-tablet-12">
+                        <video controls="true" preload="none" poster="assets/images/placeholder-video.png" width="400" height="220">
+                            <source src="assets/video/elo7-video.mp4" type="video/mp4" />
+                            <!-- ogg, webm-->                    
+                        </video>
+                    </div>                
+
+                    <article class="citation col-desk-6 col-tablet-12">
+                        <h2>Palavra do CEO</h2>
+                        <span>Carlos Curioni</span>
+                        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido, simplesmente uma simulação de texto da indústria.
+                        </p>
+                    </article>
+                    
+                </div>
+                
                 <section class="team-members">
-                    <h2>Conheça nosso time fora de série</h2>
+                    <h3>Conheça nosso time fora de série</h3>
                     <ul>
-                        <li>
+                        <li class="col-desk-3 col-tablet-6">
                             <figure>
                                 <img src="assets/images/camila.png" alt="Trabalhe no Elo7" title="Trabalhe no Elo7">
                             </figure>
                         </li>
-                        <li>
+                        <li class="col-desk-3 col-tablet-6">
                             <figure>
                                 <img src="assets/images/guto.png" alt="Trabalhe no Elo7" title="Trabalhe no Elo7">
                             </figure>
                         </li>
-                        <li>
+                        <li class="col-desk-3 col-tablet-6">
                             <figure>
                                 <img src="assets/images/david.png" alt="Trabalhe no Elo7" title="Trabalhe no Elo7">
                             </figure>
                         </li>
-                        <li>
+                        <li class="col-desk-3 col-tablet-6">
                             <figure>
                                 <img src="assets/images/beatriz.png" alt="Trabalhe no Elo7" title="Trabalhe no Elo7">
                             </figure>
@@ -56,25 +77,25 @@
             <!-- Elo7 team -->
 
             <!-- The company -->
-            <section class="the-company">
+            <section class="box-full the-company">
                 <ul>
                     <li>
                         <span></span>
-                        <h3>Qualidade de vida</h3>
+                        <h4>Qualidade de vida</h4>
                         <p></p>
                     </li>
                     <li>
                         <span></span>
-                        <h3>Ambiente descontraído</h3>
+                        <h4>Ambiente descontraído</h4>
                         <p></p>
                     </li>
                     <li>
                         <span></span>
-                        <h3>Atividades extras</h3>
+                        <h4>Atividades extras</h4>
                         <p></p>
                     </li>
                 </ul>
-                <a href="#">Saiba mais &raquo;</a>
+                <a href="#" class="link-section">Saiba mais </a>
 
                 <figure>
                     <img src="assets/images/foto-bottom.png" alt="Ambiente descontraído" title="Ambiente descontraído">
@@ -83,9 +104,9 @@
             <!-- The company -->        
 
             <!-- opportunities -->
-            <footer class="opportunities">
-                <h2>Vagas em aberto</h2>
-                <h3>Desenvolvimento </h3>            
+            <footer class="box-full opportunities">
+                <h3>Vagas em aberto</h3>
+                <h4>Desenvolvimento </h4>
                 <ul>
                     <li>
                         <a href="#">Desenvolvimento Mobile Sênior (Android e IOS)</a>

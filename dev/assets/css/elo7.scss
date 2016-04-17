@@ -1,0 +1,103 @@
+@import 'grid.scss';
+@import 'base.scss';
+
+/* header */
+.header-elo7 {
+    position: relative;
+    text-align: center;
+}
+.header-elo7 h1 {    
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    font-size: 5em;    
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #000;
+    bottom: 5.3em;
+}
+
+.header-elo7 p {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+/* team */
+.elo7-team {
+    background: green;
+}
+.team-members img {
+    max-width: 208px;
+}
+.elo7-team ul li{
+    padding: 0;
+    min-height: 208px;
+    text-align: center;
+}
+
+.citation span {
+    color: #f9a90e;
+    font-style: italic;
+    font-size: 1.6em;
+    margin-top: .5em;
+    display: inherit;
+}
+
+.citation p {
+    width: 80%;
+}
+
+/* the company */
+.the-company {
+    background: olive;
+}
+
+/* opportunities */
+.opportunities {
+    background: pink;
+}
+
+
+
+
+/* default */
+.link-section {
+    border-top: 1px #ccc solid;
+    padding: 20px 10px;
+    display: inherit;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.link-section:after {
+    content: "\00BB";
+    font-weight: 100;
+    font-family: Arial;
+    
+    
+}
+
+
+
+
+
+
+
+/* Somente mobile */
+@media (max-width: 480px) {
+    .header-elo7 h1 {    
+        bottom: 5em;
+    }
+}
+/* Somente mobile */
+
+/* Somente tablet */
+@media (min-width: 481px) and (max-width: 1023px) {	
+    
+}
+/* Somente tablet */
+
+/* Somente desktop */
+@media (min-width: 1024px) {
+}
+/* Somente desktop */
