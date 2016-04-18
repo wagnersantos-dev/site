@@ -12,7 +12,8 @@ var paths = {
   scripts: ['dev/assets/js/**/*.js'],
   images: ['dev/assets/images/**/*'],
   css: ['dev/assets/css/**/*.css'],
-  html: ['dev/*.html']
+  html: ['dev/*.html'],
+  video: ['dev/assets/video/**/*']
 };
 
 gulp.task('clean', function() {
@@ -49,6 +50,11 @@ gulp.task('images', ['clean'], function() {
     .pipe(gulp.dest('build/assets/images'));
 });
 
+gulp.task('video', ['clean'], function() {
+  return gulp.src(paths.video)    
+    .pipe(gulp.dest('build/assets/video'));
+});
+
 gulp.task('webserver', function() {
   gulp.src('dev')
     .pipe(webserver({
@@ -64,6 +70,7 @@ gulp.task('watch', function() {
   gulp.watch(paths.images, ['images']);
   gulp.watch(paths.css, ['css']);
   gulp.watch(paths.html, ['html']);
+  gulp.watch(paths.html, ['video']);
 });
 
-gulp.task('default', ['watch', 'scripts', 'images', 'css', 'html']);
+gulp.task('default', ['watch', 'scripts', 'images', 'css', 'html', 'video']);
