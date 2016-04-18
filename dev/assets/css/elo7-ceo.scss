@@ -1,10 +1,14 @@
+@import 'variables';
+video {
+    width: 100%;
+}
 .ceo-elo7 {
     background: #f8f8f8;
 }
 .citation span {
     color: #f9a90e;
     font-style: italic;
-    font-size: 1.6em;
+    font-size: $font-size-default;
     margin-top: .5em;
     margin-bottom: 2em;
     display: inherit;

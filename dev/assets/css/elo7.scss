@@ -1,11 +1,11 @@
-@import 'mixins.scss';
-@import 'grid.scss';
-@import 'base.scss';
-@import 'elo7-header.scss';
-@import 'elo7-ceo.scss';
-@import 'elo7-team.scss';
-@import 'elo7-company.scss';
-@import 'elo7-opportunities.scss';
+
+@import 'grid';
+@import 'base';
+@import 'elo7-header';
+@import 'elo7-ceo';
+@import 'elo7-team';
+@import 'elo7-company';
+@import 'elo7-opportunities';
 
 /* default */
 .link-section {
@@ -29,20 +29,17 @@
     .header-elo7 h1 {    
         bottom: 7em;
     }
-    
-    .opportunities ul li a {
-        display: block;
-    }
 }
 /* Somente mobile */
 
+/* mobile e tablet */
+@media (max-width: 1023px) {}
+/* mobile e tablet */
+
 /* Somente tablet */
-@media (min-width: 481px) and (max-width: 1023px) {	
-    
-}
+@media (min-width: 481px) and (max-width: 1023px) {}
 /* Somente tablet */
 
 /* Somente desktop */
-@media (min-width: 1024px) {
-}
+@media (min-width: 1024px) {}
 /* Somente desktop */

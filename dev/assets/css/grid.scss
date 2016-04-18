@@ -1,7 +1,4 @@
-$grid-gutter: 1%;
-$grid-columns: 12;
-$grid-max: 960px;
-
+@import 'variables';
 
 /* Somente mobile */
 @media (max-width: 480px) {     
@@ -15,20 +12,16 @@ $grid-max: 960px;
 /* Somente mobile */
 
 /* Somente tablet */
-@media (min-width: 481px) and (max-width: 1023px) {	
-    
+@media (min-width: 481px) and (max-width: 1023px) {
     
     @for $i from 1 through 10 {
     .col-tablet-#{$i} {
-        float: left;
-        clear: none;
+            float: left;
+            clear: none;
+        }
     }
-}
     
-    
-    
-    [class*="col-tablet-"] {
-      background: lightgray;            
+    [class*="col-tablet-"] {            
       box-sizing: border-box;
     }
 
@@ -46,9 +39,9 @@ $grid-max: 960px;
         float: left;
         clear: none;
     }
+    
     [class*="col-desk-"] {
-      
-      
+      box-sizing: border-box;
     }
 
     @for $i from 1 through $grid-columns{ 

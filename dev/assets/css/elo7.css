@@ -49,7 +49,6 @@
     clear: none; }
 
   [class*="col-tablet-"] {
-    background: lightgray;
     box-sizing: border-box; }
 
   .col-tablet-1 {
@@ -93,6 +92,9 @@
   .col-desk-1, .col-desk-2, .col-desk-3, .col-desk-4, .col-desk-5, .col-desk-6, .col-desk-7, .col-desk-8, .col-desk-9, .col-desk-10, .col-desk-11, .col-desk-12 {
     float: left;
     clear: none; }
+
+  [class*="col-desk-"] {
+    box-sizing: border-box; }
 
   .col-desk-1 {
     width: 8.33333%; }
@@ -139,18 +141,18 @@ body {
 
 h2 {
   font-weight: 700;
-  font-size: 1.8em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1.8em; }
 
 h3 {
   font-weight: 700;
-  font-size: 1.6em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1.6em; }
 
 h4 {
   font-weight: 700;
-  font-size: 1.4em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1.8em; }
 
 p {
   line-height: 1.6em;
@@ -184,16 +186,17 @@ a:hover {
   padding: 0 2em; }
 
 img {
+  width: 100%; }
+
+.all-site img[src*="loading"] {
   width: auto; }
 
 .all-site img {
   background: #FFF url(../image/loading.gif) no-repeat center center; }
 
-/* Somente mobile */
 @media (max-width: 480px) {
   body {
     font-size: 50%; } }
-/* Somente mobile */
 .header-elo7 {
   position: relative;
   text-align: center;
@@ -211,6 +214,9 @@ img {
 
 .header-elo7 p {
   padding: 1.6em 4em; }
+
+video {
+  width: 100%; }
 
 .ceo-elo7 {
   background: #f8f8f8; }
@@ -277,12 +283,21 @@ img {
   .opportunities h3 {
     margin-bottom: 3em; }
   .opportunities a {
-    font-weight: 500; }
+    font-weight: 500;
+    font-size: 1.8em; }
   .opportunities span {
-    text-align: right; }
+    text-align: right;
+    font-size: 1.8em; }
   .opportunities ul li {
     margin-bottom: 1em; }
 
+@media (max-width: 1023px) {
+  .opportunities ul li a {
+    display: block;
+    margin-bottom: .5em; }
+
+  .opportunities ul li {
+    margin-bottom: 2em; } }
 /* default */
 .link-section {
   border-top: .1em #ccc solid;
@@ -300,11 +315,10 @@ img {
 /* Somente mobile */
 @media (max-width: 480px) {
   .header-elo7 h1 {
-    bottom: 7em; }
-
-  .opportunities ul li a {
-    display: block; } }
+    bottom: 7em; } }
 /* Somente mobile */
+/* mobile e tablet */
+/* mobile e tablet */
 /* Somente tablet */
 /* Somente tablet */
 /* Somente desktop */

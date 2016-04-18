@@ -1,41 +1,44 @@
+
+@import 'mixins';
+@import 'variables';
 body {    
     font-family: sans-serif;
     font-size: 62.5%;
-    color: #7d7873;
+    color: $color-default;
     font-weight: 300;
     transition: .5s;
 }
 
-h1 {}
 h2 {
-    font-weight: 700;
+    @include titleDefault();
     font-size: 1.8em;
-    text-transform: uppercase;
 }
+
 h3 {
-    font-weight: 700;
-    font-size: 1.6em;
-    text-transform: uppercase;
+    @include titleDefault();
+    font-size: $font-size-default;
+    
 }
+
 h4 {
-    font-weight: 700;
-    font-size: 1.4em;
-    text-transform: uppercase;
+    @include titleDefault();
+    font-size: 1.8em;
 }
-h5 {}
-h6 {}
+
 p {
 
     line-height: 1.6em;
-    font-size: 1.6em;
+    font-size: $font-size-default;
 }
+
 span {
-    font-size: 1.6em;
+    font-size: $font-size-default;
 }
+
 a {
     color: #359c9c;
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: $font-size-default;
 }
 
 a:hover {    
@@ -45,9 +48,8 @@ a:hover {
 .all-site{
     margin: 0 auto;
     width: 96%;
-    
-    
 }
+
 .box-full {
     width: 100%;
     max-width: 960px;
@@ -55,6 +57,7 @@ a:hover {
     margin: 0 auto;
     display: table;
 }
+
 .content-default {
     max-width: 860px;
     margin: 0 auto;
@@ -62,23 +65,20 @@ a:hover {
 }
 
 img {
+    width: 100%;
     
+}
+
+.all-site img[src*="loading"] {
     width: auto;
-    
 }
 
 .all-site img {
     background: #FFF url(../image/loading.gif) no-repeat center center;
-    
-    
 }
 
-
-/* Somente mobile */
 @media (max-width: 480px) {
     body {
         font-size: 50%;
     }
 }
-/* Somente mobile */
-
