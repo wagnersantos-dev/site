@@ -1,0 +1,17 @@
+.elo7-team {
+    @include no-padding-top();
+    background: #f8f8f8;
+}
+.team-members img {
+    max-width: 208px;
+}
+
+.team-members h3 {
+    @include title-center();
+
+}
+.elo7-team ul li{
+    padding: 0;
+    min-height: 208px;
+    text-align: center;
+}

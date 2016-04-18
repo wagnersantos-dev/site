@@ -1,0 +1,13 @@
+@mixin title-center() {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 2em auto;
+    font-size: 2em;
+}
+@mixin no-padding-top() {
+    padding-top: 0;
+}
+@mixin no-padding-t-b() {
+    padding-top: 0;
+    padding-bottom: 0;
+}
