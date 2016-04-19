@@ -20,13 +20,13 @@
                 <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido.</p>
                 <a href="#" class="link-section">Vagas em aberto </a>
             </header>
-            <section class="box-full ceo-elo7">    
-                
+            <section class="box-full ceo-elo7">   
                 <div class="content-default">
-                    <div class="col-desk-6 col-tablet-12">
+                    <div class="col-desk-6 col-tablet-12 box-video">
                         <video controls="true" preload="none" poster="assets/images/placeholder-video.png" width="400" height="220">
-                            <source  class="b-lazy"src="assets/video/elo7-video.mp4" type="video/mp4" />
-                            <!-- ogg, webm -->
+                            <source src="assets/video/elo7-video.mp4" type="video/mp4" />
+                            <source src="assets/video/elo7-video.webm" type="video/webm" />
+                            <source src="assets/video/elo7-video.ogv" type="video/ogg" />
                         </video>
                     </div>
                     <article class="citation col-desk-6 col-tablet-12">
@@ -117,10 +117,7 @@
             echo.init({
                 offset: 100,
                 throttle: 250,
-                unload: false,
-                callback: function (element, op) {
-                    console.log(element, 'has been', op + 'ed')
-                }
+                unload: false
             });
         </script>
 	</body>

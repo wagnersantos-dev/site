@@ -7,6 +7,7 @@ var del = require('del');
 var cleanCSS = require('gulp-clean-css'); // minify css
 var htmlmin = require('gulp-htmlmin'); // minify html
 var webserver = require('gulp-webserver'); // server
+var cachebust = require('gulp-cache-bust');
 
 var paths = {
   scripts: ['dev/assets/js/**/*.js'],
@@ -38,6 +39,9 @@ gulp.task('html', ['clean'], function() {
   return gulp.src(paths.html)
     .pipe(sourcemaps.init())      
       .pipe(htmlmin({collapseWhitespace: true}))      
+  .pipe(cachebust({
+		type: 'timestamp'
+	}))
     .pipe(gulp.dest('build'));
 });
 
@@ -47,6 +51,7 @@ gulp.task('images', ['clean'], function() {
         optimizationLevel: 5,
         progressive: true
     }))
+  
     .pipe(gulp.dest('build/assets/images'));
 });
 
