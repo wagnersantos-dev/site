@@ -52,13 +52,8 @@ a:hover {
   padding: 0 2em; }
 
 img {
-  width: 100%; }
-
-.all-site img[src*="loading"] {
-  width: auto; }
-
-.all-site img {
-  background: #FFF url(../image/loading.gif) no-repeat center center; }
+  width: 100%;
+  background: url(../images/loading.gif) center center no-repeat; }
 
 @media (max-width: 480px) {
   body {

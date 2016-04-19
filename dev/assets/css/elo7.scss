@@ -23,23 +23,8 @@
     font-family: Arial;
 }
 
-
-/* Somente mobile */
 @media (max-width: 480px) {
     .header-elo7 h1 {    
         bottom: 7em;
     }
 }
-/* Somente mobile */
-
-/* mobile e tablet */
-@media (max-width: 1023px) {}
-/* mobile e tablet */
-
-/* Somente tablet */
-@media (min-width: 481px) and (max-width: 1023px) {}
-/* Somente tablet */
-
-/* Somente desktop */
-@media (min-width: 1024px) {}
-/* Somente desktop */

@@ -4,29 +4,24 @@
 		<title>Trabalhe no Elo7</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="cache-control"   content="no-cache" />
+        <meta http-equiv="expires" content="0" />
 		<link rel="shortcut icon" href="assets/images/favicon.png">
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css" media="all" />
         <link rel="stylesheet" type="text/css" href="assets/css/elo7.css" media="all" />
 	</head>
-    
 	<body>
-        
-        <!-- all site -->    
         <section class="all-site"> 
-
-            <!-- header -->
             <header class="box-full header-elo7">                
                 <figure>
-                    <img class="b-lazy" src="assets/images/loading.gif" data-src="assets/images/foto-header.jpg" alt="alt-text" />
+                    <img src="assets/images/blank.png" alt="Trabalhe no Elo7" title="Trabalhe no Elo7" data-echo="assets/images/foto-header.jpg" />                
                 </figure>
                 <h1>Trabalhe no  Elo7</h1>    
                 <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido.</p>
                 <a href="#" class="link-section">Vagas em aberto </a>
             </header>
-            <!-- header -->
-
-            <!-- CEO team -->
-            <section class="box-full ceo-elo7">                
+            <section class="box-full ceo-elo7">    
+                
                 <div class="content-default">
                     <div class="col-desk-6 col-tablet-12">
                         <video controls="true" preload="none" poster="assets/images/placeholder-video.png" width="400" height="220">
@@ -42,43 +37,36 @@
                     </article>
                 </div>
             </section>
-            <!-- CEO team -->
-            
-            <!-- Elo7 team -->
             <section class="box-full elo7-team">
                 <div class="content-default">
                     <section class="team-members">
                         <h3>Conheça nosso time fora de série</h3>
                         <ul>
                             <li class="col-desk-3 col-tablet-6">
-                                <figure>                                    
-                                    <img class="b-lazy"  src="assets/images/loading.gif" alt="" data-src="assets/images/camila.png">
+                                <figure>      
+                                    <img src="assets/images/blank.png" alt="Elo7 - Camila" title="Elo7 - Camila" data-echo="assets/images/camila.png" />
                                 </figure>
                             </li>
                             <li class="col-desk-3 col-tablet-6">
                                 <figure>
-                                    <img class="b-lazy"  src="assets/images/loading.gif" alt="" data-src="assets/images/guto.png">
+                                    <img src="assets/images/blank.png" alt="Elo7 - Guto" title="Elo7 - Guto" data-echo="assets/images/guto.png" />
                                 </figure>
                             </li>
                             <li class="col-desk-3 col-tablet-6">
                                 <figure>
-                                    <img class="b-lazy"  src="assets/images/loading.gif" alt="" data-src="assets/images/david.png">
+                                    <img src="assets/images/blank.png" alt="Elo7 - David" title="Elo7 - David" data-echo="assets/images/david.png" />
                                 </figure>
                             </li>
                             <li class="col-desk-3 col-tablet-6">
                                 <figure>
-                                <img class="b-lazy"  src="assets/images/loading.gif" alt="" data-src="assets/images/beatriz.png">    
+                                    <img src="assets/images/blank.png" alt="Elo7 - Beatriz" title="Elo7 - Beatriz" data-echo="assets/images/beatriz.png" />
                                 </figure>
                             </li>
                         </ul>
                     </section>
                 </div>
             </section>
-            <!-- Elo7 team -->
-
-            <!-- The company -->
             <section class="box-full the-company">
-                
                 <div class="content-default">
                     <ul>
                         <li class="col-desk-4">
@@ -99,14 +87,11 @@
                     </ul>
                     <a href="#" class="link-section">Saiba mais </a>
                     <figure>
-                        <img class="b-lazy"  src="assets/images/loading.gif" alt="" data-src="assets/images/foto-bottom.jpg">
+                        <img src="assets/images/blank.png" alt="Elo7 - Evento" title="Elo7 - Evento" data-echo="assets/images/foto-bottom.jpg" />
                     </figure>
                 </div>
             </section>
-            <!-- The company -->        
-
-            <!-- opportunities -->
-            <footer class="box-full opportunities">                
+            <footer class="box-full opportunities">  
                 <div class="content-default">
                     <h2>Vagas em aberto</h2>
                     <h3>Desenvolvimento </h3>
@@ -125,22 +110,18 @@
                         </li>                
                     </ul>
                 </div>
-                
             </footer>
-            <!-- opportunities -->
-
         </section>
-        <!-- all site -->
-   
-        <!-- scripts -->
         <script src="assets/js/load-img.js"></script>
         <script>
-            (function() {
-                // Initialize
-                var bLazy = new Blazy();
-            })();
+            echo.init({
+                offset: 100,
+                throttle: 250,
+                unload: false,
+                callback: function (element, op) {
+                    console.log(element, 'has been', op + 'ed')
+                }
+            });
         </script>
-        <!-- scripts -->
-        
 	</body>
 </html>

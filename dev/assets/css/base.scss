@@ -1,6 +1,6 @@
-
 @import 'mixins';
 @import 'variables';
+
 body {    
     font-family: sans-serif;
     font-size: 62.5%;
@@ -17,7 +17,6 @@ h2 {
 h3 {
     @include titleDefault();
     font-size: $font-size-default;
-    
 }
 
 h4 {
@@ -66,15 +65,7 @@ a:hover {
 
 img {
     width: 100%;
-    
-}
-
-.all-site img[src*="loading"] {
-    width: auto;
-}
-
-.all-site img {
-    background: #FFF url(../image/loading.gif) no-repeat center center;
+    background: url(../images/loading.gif) center center no-repeat;
 }
 
 @media (max-width: 480px) {

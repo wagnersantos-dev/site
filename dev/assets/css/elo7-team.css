@@ -7,9 +7,9 @@ Error: Undefined mixin 'no-padding-top'.
 2:     @include no-padding-top();
 3:     background: #f8f8f8;
 4: }
-5: .team-members img {
-6:     max-width: 208px;
-7: }
+5: 
+6: .team-members img {
+7:     max-width: 208px;
 
 Backtrace:
 assets/css/elo7-team.scss:2:in `no-padding-top'
@@ -66,4 +66,4 @@ assets/css/elo7-team.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'no-padding-top'.\A         on line 2 of assets/css/elo7-team.scss, in `no-padding-top'\A         from line 2 of assets/css/elo7-team.scss\A \A 1: .elo7-team {\A 2:     @include no-padding-top();\A 3:     background: #f8f8f8;\A 4: }\A 5: .team-members img {\A 6:     max-width: 208px;\A 7: }"; }
+  content: "Error: Undefined mixin 'no-padding-top'.\A         on line 2 of assets/css/elo7-team.scss, in `no-padding-top'\A         from line 2 of assets/css/elo7-team.scss\A \A 1: .elo7-team {\A 2:     @include no-padding-top();\A 3:     background: #f8f8f8;\A 4: }\A 5: \A 6: .team-members img {\A 7:     max-width: 208px;"; }
